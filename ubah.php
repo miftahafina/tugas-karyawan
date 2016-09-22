@@ -77,6 +77,7 @@ while ($row = mysqli_fetch_assoc($eksekusi)) {
 
     <tr>
         <td colspan="3" align="center">
+            <input type="hidden" name="nip_lama" value="<?php echo $data_karyawan[0]['nip'] ?>">
             <input type="submit" name="tambah" value="Simpan">
         </td>
     </tr>

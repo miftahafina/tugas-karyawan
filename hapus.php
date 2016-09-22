@@ -11,7 +11,7 @@ $query = "DELETE FROM `karyawan` WHERE `karyawan`.`nip` = '$nip';";
 // jalankan query
 $eksekusi = mysqli_query($db, $query);
 
-// cek insert
+// cek penghapusan
 if ($eksekusi) {
     exit("<script>window.location = 'tampil.php';</script>");
 } else {
