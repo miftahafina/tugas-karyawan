@@ -46,11 +46,11 @@ while ($row = mysqli_fetch_assoc($eksekusi)) {
         <td><?php echo $karyawan['jabatan'] ?></td>
         <td><?php echo $karyawan['alamat'] ?></td>
         <td>
+            <a href="ubah.php?nip=<?php echo $karyawan['nip'] ?>">Ubah</a> |
             <a href="hapus.php?nip=<?php echo $karyawan['nip'] ?>">Hapus</a>
         </td>
     </tr>
     <?php endforeach ?>
-
     <?php endif ?>
     <tr>
         <td colspan="6">
