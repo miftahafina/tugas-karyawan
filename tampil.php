@@ -21,6 +21,7 @@ while ($row = mysqli_fetch_assoc($eksekusi)) {
 
 <!-- menampilkan tabel -->
 <h1>Tabel Data Karyawan</h1>
+
 <table border="1">
     <tr>
         <th>No</th>
@@ -28,11 +29,12 @@ while ($row = mysqli_fetch_assoc($eksekusi)) {
         <th>Nama</th>
         <th>Jabatan</th>
         <th>Alamat</th>
+        <th>Aksi</th>
     </tr>
 
     <?php if (empty($data_karyawan)) : ?>
     <tr>
-        <td colspan="5">Tidak Ada data</td>
+        <td colspan="6">Tidak Ada data</td>
     </tr>
     <?php else : ?>
 
@@ -43,6 +45,9 @@ while ($row = mysqli_fetch_assoc($eksekusi)) {
         <td><?php echo $karyawan['nama'] ?></td>
         <td><?php echo $karyawan['jabatan'] ?></td>
         <td><?php echo $karyawan['alamat'] ?></td>
+        <td>
+            <a href="hapus.php?nip=<?php echo $karyawan['nip'] ?>">Hapus</a>
+        </td>
     </tr>
     <?php endforeach ?>
 

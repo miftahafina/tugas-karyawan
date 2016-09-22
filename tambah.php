@@ -24,7 +24,7 @@
         <td>:</td>
         <td>
             <select name="jabatan" required>
-                <option value="-" selected disabled>- pilih -</option>
+                <option value="" selected disabled>- pilih -</option>
                 <option value="CEO">CEO</option>
                 <option value="CFO">CFO</option>
                 <option value="CTO">CTO</option>
