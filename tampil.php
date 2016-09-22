@@ -52,4 +52,9 @@ while ($row = mysqli_fetch_assoc($eksekusi)) {
     <?php endforeach ?>
 
     <?php endif ?>
+    <tr>
+        <td colspan="6">
+            <a href="tambah.php">Tambahkan data baru</a>
+        </td>
+    </tr>
 </table>

@@ -7,7 +7,7 @@
         <td>NIP</td>
         <td>:</td>
         <td>
-            <input type="text" name="nip" placeholder="..." maxlength="10" required>
+            <input type="text" name="nip" placeholder="..." maxlength="10" required autofocus>
         </td>
     </tr>
 
