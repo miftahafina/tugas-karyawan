@@ -52,4 +52,4 @@
 </form>
 
 <!-- menampilkan tabel karyawan -->
-<?php include 'tampil.php'; ?>
+<?php include_once 'tampil.php'; ?>

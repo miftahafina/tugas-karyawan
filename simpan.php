@@ -1,6 +1,6 @@
 <?php
 // memanggil koneksi
-include "koneksi.php";
+require_once "koneksi.php";
 
 // ambil data inputan form
 $nip     = htmlspecialchars($_POST['nip']);

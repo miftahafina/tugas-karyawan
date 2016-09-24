@@ -1,6 +1,6 @@
 <?php
 // memanggil koneksi
-include "koneksi.php";
+require_once "koneksi.php";
 
 // query
 $query = "SELECT * FROM `karyawan` ORDER BY `nip` ASC";
